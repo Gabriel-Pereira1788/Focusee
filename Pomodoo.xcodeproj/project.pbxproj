@@ -44,7 +44,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		9B4C5E6D2D5B5F350034E0E5 /* Exceptions for "Pomodoo" folder in "Pomodoo" target */ = {
+		9B4C5E6D2D5B5F350034E0E5 /* Exceptions for "MacOS" folder in "Pomodoo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Features/Settings/Tests/SettingsOptionViewModelTest.swift,
@@ -55,7 +55,7 @@
 			);
 			target = 9B33EC372D2DFD4E00439338 /* Pomodoo */;
 		};
-		9BB04C852DBD226C00E6E7E9 /* Exceptions for "Pomodoo" folder in "PomodooTests" target */ = {
+		9BB04C852DBD226C00E6E7E9 /* Exceptions for "MacOS" folder in "PomodooTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Features/Settings/Tests/SettingsOptionViewModelTest.swift,
@@ -68,13 +68,23 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9B33EC3A2D2DFD4E00439338 /* Pomodoo */ = {
+		9B33EC3A2D2DFD4E00439338 /* MacOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9B4C5E6D2D5B5F350034E0E5 /* Exceptions for "Pomodoo" folder in "Pomodoo" target */,
-				9BB04C852DBD226C00E6E7E9 /* Exceptions for "Pomodoo" folder in "PomodooTests" target */,
+				9B4C5E6D2D5B5F350034E0E5 /* Exceptions for "MacOS" folder in "Pomodoo" target */,
+				9BB04C852DBD226C00E6E7E9 /* Exceptions for "MacOS" folder in "PomodooTests" target */,
 			);
-			path = Pomodoo;
+			path = MacOS;
+			sourceTree = "<group>";
+		};
+		9B5648772DCD37EE0003319D /* Core */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9B5648832DCD37F90003319D /* Common */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		9BB04C782DBD223C00E6E7E9 /* PomodooTests */ = {
@@ -107,7 +117,9 @@
 		9B33EC2F2D2DFD4E00439338 = {
 			isa = PBXGroup;
 			children = (
-				9B33EC3A2D2DFD4E00439338 /* Pomodoo */,
+				9B5648832DCD37F90003319D /* Common */,
+				9B5648772DCD37EE0003319D /* Core */,
+				9B33EC3A2D2DFD4E00439338 /* MacOS */,
 				9BB04C782DBD223C00E6E7E9 /* PomodooTests */,
 				9BB813A62D343B6300F55000 /* Frameworks */,
 				9B33EC392D2DFD4E00439338 /* Products */,
@@ -151,7 +163,9 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9B33EC3A2D2DFD4E00439338 /* Pomodoo */,
+				9B33EC3A2D2DFD4E00439338 /* MacOS */,
+				9B5648772DCD37EE0003319D /* Core */,
+				9B5648832DCD37F90003319D /* Common */,
 			);
 			name = Pomodoo;
 			packageProductDependencies = (
@@ -392,15 +406,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Pomodoo/Pomodoo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MacOS/Pomodoo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_ASSET_PATHS = "\"Pomodoo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MacOS/Preview Content\"";
 				DEVELOPMENT_TEAM = HDY45LN42J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pomodoo/Info.plist;
+				INFOPLIST_FILE = MacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Pomodoo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
@@ -424,15 +439,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Pomodoo/Pomodoo.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MacOS/Pomodoo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_ASSET_PATHS = "\"Pomodoo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MacOS/Preview Content\"";
 				DEVELOPMENT_TEAM = HDY45LN42J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pomodoo/Info.plist;
+				INFOPLIST_FILE = MacOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Pomodoo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
